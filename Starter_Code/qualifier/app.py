@@ -13,6 +13,9 @@ from pathlib import Path
 
 from qualifier.utils.fileio import load_csv
 
+#   importing save_csv function from fileio
+from qualifier.utils.fileio import save_csv
+
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
     calculate_loan_to_value_ratio,
