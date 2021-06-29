@@ -44,7 +44,7 @@ def save_csv(qualifying_data):
     IMPORANT: qualifying_data will need to be redefined
     """
     csvpath = Path("qualifying_data.csv")
-    with open(output_path, 'w', newline='') as csvfile:
+    with open(csvpath, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         for row in qualifying_data:
             csvwriter.writerow(header)
