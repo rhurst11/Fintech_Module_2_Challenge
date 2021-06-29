@@ -31,18 +31,19 @@ def load_csv(csvpath):
     return data
 
 #   csv lib already imported
-"""
-Here I am writing to a new csv file as I did in the end of module 1
-I set the output path for the newly written csv file
-I set up a csv writer
-I set up a for loop to iterate through the qualifying_data provided
 
-IMPORANT: qualifying_data will need to be redefined
-"""
 qualifying_data = []
 
-def save_csv():
-    output_path = Path("qualifying_data.csv")
+def save_csv(qualifying_data):
+    """
+    Here I am writing to a new csv file as I did in the end of module 1
+    I set the output path for the newly written csv file
+    I set up a csv writer
+    I set up a for loop to iterate through the qualifying_data provided
+
+    IMPORANT: qualifying_data will need to be redefined
+    """
+    csvpath = Path("qualifying_data.csv")
     with open(output_path, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         for row in qualifying_data:
