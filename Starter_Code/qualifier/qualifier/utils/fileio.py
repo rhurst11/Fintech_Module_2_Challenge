@@ -32,9 +32,7 @@ def load_csv(csvpath):
 
 #   csv lib already imported
 
-qualifying_data = []
-
-def save_csv(qualifying_data):
+def save_csv(csvpath, qualifying_loans):
     """
     Here I am writing to a new csv file as I did in the end of module 1
     I set the output path for the newly written csv file
@@ -43,9 +41,7 @@ def save_csv(qualifying_data):
 
     IMPORANT: qualifying_data will need to be redefined
     """
-    csvpath = Path("qualifying_data.csv")
     with open(csvpath, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
-        for row in qualifying_data:
-            csvwriter.writerow(header)
+        for row in qualifying_loans:
             csvwriter.writerow(row.values())
