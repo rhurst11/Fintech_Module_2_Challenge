@@ -11,11 +11,7 @@ import fire
 import questionary
 from pathlib import Path
 
-
 from qualifier.utils.fileio import load_csv
-
-#mporting save_csv function from fileio
-from qualifier.utils.fileio import save_csv
 
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
@@ -113,34 +109,7 @@ def save_qualifying_loans(qualifying_loans):
         qualifying_loans (list of lists): The qualifying bank loans.
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
-    permission_granted = questionary.confirm("Would you liked to save your qualifying loans? Yes/No").ask()
-
-    if permission_granted:
-        csvpath = questionary.text("Please enter desired output file path for your saved csv file.").ask()
-        csvpath = Path(csvpath)
-        if not csvpath.exists():
-            sys.exit(f"Oops! Can't find this path: {csvpath}")
-        return save_csv(csvpath, qualifying_loans)
-
-# def save_csv(csvpath, qualifying_loans):
-#     """
-#     Here I am writing to a new csv file as I did in the end of module 1
-#     I set the output path for the newly written csv file
-#     I set up a csv writer
-#     I set up a for loop to iterate through the qualifying_data provided
-
-#     IMPORANT: qualifying_data will need to be redefined
-#     """
-#     with open(csvpath, 'w', newline='') as csvfile:
-#         csvwriter = csv.writer(csvfile)
-#         for row in qualifying_loans:
-#             csvwriter.writerow(row.values())
-
-
-
-
-
-    
+    # YOUR CODE HERE!
 
 
 def run():
