@@ -13,6 +13,10 @@ from pathlib import Path
 
 from qualifier.utils.fileio import load_csv
 
+# importing save_csv function from fileio
+from qualifier.utils.fileio import save_csv
+
+
 from qualifier.utils.calculators import (
     calculate_monthly_debt_ratio,
     calculate_loan_to_value_ratio,
@@ -111,6 +115,11 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
+    """
+    need to input save_csv() as the return of the save qualifying loans function,
+    but only if they assert yes in the questionary response for save_qualifying_loans()
+    
+    """
 
 
 def run():
