@@ -5,6 +5,7 @@ This contains a helper function for loading and saving CSV files.
 
 """
 import csv
+import questionary
 
 
 def load_csv(csvpath):
@@ -28,3 +29,12 @@ def load_csv(csvpath):
         for row in csvreader:
             data.append(row)
     return data
+
+# creating initial save_csv() function
+
+def save_csv(qualifying_loans):
+    qual_loanscsv_output_path = questionary.text("Please the desired path for your new saved csvfile").ask()
+    with open (qual_loanscsv_output_path, 'w', newline='') as user_qual_loans_csvfile:
+        user_qual_loans_csvwriter = csv.writer(user_qual_loans_csvfile)
+        for row in qualifying_loans:
+            csv.writer(row)
