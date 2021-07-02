@@ -8,12 +8,10 @@ from loan_modules.qualifier.utils import fileio
 # # from qualifier.utils import calculators
 
 # # # Import Filters
-from loan_modules.qualifier.filters import credit_score
-from loan_modules.qualifier.filters import debt_to_income
-from loan_modules.qualifier.filters import loan_to_value
-from loan_modules.qualifier.filters import max_loan_size
-
-print("Imports seem to be working")
+# from loan_modules.qualifier.filters import credit_score
+# from loan_modules.qualifier.filters import debt_to_income
+# from loan_modules.qualifier.filters import loan_to_value
+# from loan_modules.qualifier.filters import max_loan_size
 
 
 # #     # @TODO: Your code here!
