@@ -118,27 +118,45 @@ def save_qualifying_loans(qualifying_loans):
     """
     need to input save_csv() as the return of the save qualifying loans function,
     but only if they assert yes in the questionary response for save_qualifying_loans()
-    
+    1. set up nested conditional
+        - would you like to save your loan data? Y/N 
+        - if Y: please enter desired path for saved copy: 
+    2. return statement triggered by conditional if true to return save_csv(qualifying_loans)
+
     """
+    affirm_save = questionary.select(
+        "Would you like to save a csv file of your qualifying loans?",
+        choices = ["Yes Please", "No Thanks"],
+        ).ask()
+
+    if affirm_save == "Yes please":
+        #  eventually need to input save_csv() and one more round of questionary for file path
+        user_save_path_ouput = questionary.text("Please enter your desire path for your saved csv:").ask()
+            # will eventually need to add conditional checker for existence of path
+        return(save_csv(user_save_path_ouput, qualifying_loans))
+
+    elif affirm_save == "No Thanks":
+        return print("Okay")
+
+#save_qualifying_loans()
+
+# def run():
+#     """The main function for running the script."""
+
+#     # Load the latest Bank data
+#     bank_data = load_bank_data()
+
+#     # Get the applicant's information
+#     credit_score, debt, income, loan_amount, home_value = get_applicant_info()
+
+#     # Find qualifying loans
+#     qualifying_loans = find_qualifying_loans(
+#         bank_data, credit_score, debt, income, loan_amount, home_value
+#     )
+
+#     # Save qualifying loans
+#     save_qualifying_loans(qualifying_loans)
 
 
-def run():
-    """The main function for running the script."""
-
-    # Load the latest Bank data
-    bank_data = load_bank_data()
-
-    # Get the applicant's information
-    credit_score, debt, income, loan_amount, home_value = get_applicant_info()
-
-    # Find qualifying loans
-    qualifying_loans = find_qualifying_loans(
-        bank_data, credit_score, debt, income, loan_amount, home_value
-    )
-
-    # Save qualifying loans
-    save_qualifying_loans(qualifying_loans)
-
-
-if __name__ == "__main__":
-    fire.Fire(run)
+# if __name__ == "__main__":
+#     fire.Fire(run)
