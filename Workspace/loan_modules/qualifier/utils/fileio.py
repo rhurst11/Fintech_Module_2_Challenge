@@ -32,9 +32,10 @@ def load_csv(csvpath):
 
 # creating initial save_csv() function
 
-def save_csv(qualifying_loans):
-    qual_loanscsv_output_path = questionary.text("Please the desired path for your new saved csvfile").ask()
-    with open (qual_loanscsv_output_path, 'w', newline='') as user_qual_loans_csvfile:
+def save_csv(user_save_path_ouput, qualifying_loans):
+    #qual_loanscsv_output_path = questionary.text("Please the desired path for your new saved csvfile").ask()
+    #currently written to intake output path from save_qualifying_loans()
+    with open (user_save_path_ouput, 'w', newline='') as user_qual_loans_csvfile:
         user_qual_loans_csvwriter = csv.writer(user_qual_loans_csvfile)
         for row in qualifying_loans:
             csv.writer(row)
