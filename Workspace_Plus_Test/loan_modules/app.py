@@ -124,12 +124,17 @@ def save_qualifying_loans(qualifying_loans):
     2. return statement triggered by conditional if true to return save_csv(qualifying_loans)
 
     """
-    affirm_save = questionary.confirm("Would you like to save a csv file of your qualifying loans? (Y/N)").ask()
+    if len(qualifying_loans) > 0:
+        affirm_save = questionary.confirm("Would you like to save a csv file of your qualifying loans? (Y/N)").ask()
+    else: 
+        print("It doesn't appear that you qualified for any loans, so we cannot provide you with any more information")
+        sys.exit(f"Program Now Ending: Have a good day!")
 
     if affirm_save:
         
         #  eventually need to input save_csv() and one more round of questionary for file path
-        user_save_path_ouput = questionary.text("Please enter your desired output path for your saved csv:").ask()
+        output = questionary.text("Please enter your desired output path for your saved csv:").ask()
+        user_save_path_ouput = Path(output)
             # need to add conditional checker for existence of path
         if not user_save_path_ouput.exists():
             sys.exit(f"Oops! Can't find this path: {user_save_path_ouput}")
