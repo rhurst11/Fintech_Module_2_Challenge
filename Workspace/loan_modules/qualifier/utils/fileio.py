@@ -38,4 +38,4 @@ def save_csv(user_save_path_ouput, qualifying_loans):
     with open (user_save_path_ouput, 'w', newline='') as user_qual_loans_csvfile:
         user_qual_loans_csvwriter = csv.writer(user_qual_loans_csvfile)
         for row in qualifying_loans:
-            csv.writer(row)
+            user_qual_loans_csvwriter.writerow(row)
