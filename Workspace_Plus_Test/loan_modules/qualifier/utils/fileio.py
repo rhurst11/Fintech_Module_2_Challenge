@@ -40,9 +40,11 @@ def save_csv(user_save_path_ouput, qualifying_loans):
 
     """
 
-    #qual_loanscsv_output_path = questionary.text("Please the desired path for your new saved csvfile").ask()
+    #qual_loanscsv_output_path = questionary.text("Please the desired path for your new saved csvfile").ask()\
+    header = ["Lender", "Loan Amount,Max", "LTV,Max", "DTI,Min", "Credit Score", "Interest Rate"]
     #currently written to intake output path from save_qualifying_loans() in app.py
     with open (user_save_path_ouput, 'w', newline='') as user_qual_loans_csvfile:
         user_qual_loans_csvwriter = csv.writer(user_qual_loans_csvfile)
+        user_qual_loans_csvwriter.writerow(header)
         for row in qualifying_loans:
             user_qual_loans_csvwriter.writerow(row)
