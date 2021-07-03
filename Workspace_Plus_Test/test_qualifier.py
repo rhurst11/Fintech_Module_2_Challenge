@@ -36,7 +36,7 @@ def test_filters():
 
 # Test the new save_csv code!
 def test_save_csv():
-    user_save_path_ouput = fileio.save_csv(Path('loan_modules/data/output/qualifying_loans.csv'), qualifying_loans = ["Test", "Testing"])
+    user_save_path_ouput = fileio.save_csv(Path('loan_modules/data/output/qualifying_loans.csv'), qualifying_loans = ["Test", "Testing", "Tested"])
 # have confirmed save_csv is writing
 
 test_save_csv()
