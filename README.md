@@ -2,6 +2,8 @@
 
 Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
 
+This application allows a user to input csv data of different loans along with some of their own finanical information, and receive a list of loans that they qualify for. All of the user-application dialogue occurs within a Command Line Interface. 
+
 ---
 
 ## Technologies
