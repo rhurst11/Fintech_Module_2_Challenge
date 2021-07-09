@@ -1,8 +1,6 @@
 # Module 2 Challenge: Expanding My Loan Qualifier Application
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
-
-This application allows a user to input csv data of different loans along with some of their own finanical information, and receive a list of loans that they qualify for. All of the user-application dialogue occurs within a Command Line Interface. 
+This application allows a user to input CSV data of different loans along with some of their own finanical information, and subsequently view a series of loans that they qualify for. The user may also save the data of their qualifying loans as a CSV file. All of the user-application dialogue occurs within a Command Line Interface, and prompts the user to input information when necessary. 
 
 ---
 
@@ -14,8 +12,7 @@ Describe the technologies required to use your project such as programming langu
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
-Required installations:
+You will need to install the following software versions: 
 
 Fire 0.4.0
 Questionary 1.9..0
@@ -38,8 +35,7 @@ This section should include screenshots, code blocks, or animations explaining h
 
 ## Contributors
 
-In this section, list all the people who contribute to this project; since you may want to be reached by recruiters or potential collaborators, include your contact e-mail, and optionally your LinkedIn or Twitter profile.
-
+Raymond Hurst - rhurst1125@berkeley.edu
 ---
 
 ## License
