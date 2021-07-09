@@ -6,18 +6,38 @@ This application allows a user to input CSV data of different loans along with s
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+This programs uses the following:
 
+### Language: 
+Python
+
+### Imported Libraries:
+csv
+sys
+questionary
+fire 
+pytest
+Path from pathlib
+
+### Versions Used In Program:
+Fire 0.4.0
+Questionary 1.9.0
+PyTest 6.2.4
+Python 3.7.10
 ---
 
 ## Installation Guide
 
-You will need to install the following software versions: 
+You will need to install the following software versions within your terminal interface: 
 
-Fire 0.4.0
-Questionary 1.9..0
-PyTest 6.2.4
-Python 3.7.10
+### Installation Steps In Order: 
+
+conda activate dev
+pip install fire
+pip install questionary
+pip install pytest
+
+
 
 ---
 
@@ -40,4 +60,4 @@ Raymond Hurst - rhurst1125@berkeley.edu
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify others what they can and can not do with your source code and files. Use this section to include the licence you want to use.
+MIT license
