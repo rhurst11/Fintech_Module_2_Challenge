@@ -45,7 +45,7 @@ You will need to install the following software versions within your terminal in
 
 This section should include screenshots, code blocks, or animations showing how your project works.
 
-![]()
+
 ---
 
 ## Usage
