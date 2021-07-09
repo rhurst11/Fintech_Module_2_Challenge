@@ -131,11 +131,9 @@ def save_qualifying_loans(qualifying_loans):
         sys.exit(f"Program Now Ending: Have a good day!")
 
     if affirm_save:
-        
-        #  eventually need to input save_csv() and one more round of questionary for file path
         output = questionary.text("Please enter your desired output path for your saved csv:").ask()
         user_save_path_ouput = Path(output)
-            # need to add conditional checker for existence of path
+            #add conditional checker for existence of path
         if not user_save_path_ouput.exists():
             sys.exit(f"Oops! Can't find this path: {user_save_path_ouput}")
             
