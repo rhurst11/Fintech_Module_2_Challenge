@@ -1,6 +1,9 @@
 # Import pathlib
 from pathlib import Path
 
+#import os to use .exists
+import os
+
 #Import PyTest
 
 import pytest
@@ -43,9 +46,13 @@ def test_calculate_loan_to_value_ratio():
 # Test the new save_csv code!
 def test_save_csv_local():
     user_save_path_ouput = fileio.save_csv(Path(' .your_pytest_loans'), qualifying_loans = ["Test", "Testing", "Tested"])
+    path_output = Path(' .your_pytest_loans')
+    isExists = os.path.exists(Path(' .your_pytest_loans'))
 # have confirmed save_csv is writing
 
 
 # 'loan_modules/data/output/qualifying_loans.csv'
 def test_save_csv_extra():
-    user_save_path_ouput = fileio.save_csv(Path('../loan_modules/data/output/qualifying_loans.csv'), qualifying_loans = ["Test", "Testing", "Tested"])
+    user_save_path_ouput = fileio.save_csv(Path('../loan_modules/data/output/test_qualifying_loans.csv'), qualifying_loans = ["Test", "Testing", "Tested"])
+    path_output = Path('../loan_modules/data/output/test_qualifying_loans.csv')
+    isExists = os.path.exists(Path('../loan_modules/data/output/test_qualifying_loans.csv'))
