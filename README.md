@@ -37,20 +37,18 @@ You will need to install the following software versions within your terminal in
 * pip install questionary
 * pip install pytest
 
-
-
----
-
-## Examples
-
-This section should include screenshots, code blocks, or animations showing how your project works.
-
-
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+Navigate to Workspace_Plus_test/loan_modules/app.py  to begin program
+
+Will be prompted to enter series of financial info via command line interface. When prompted for Path, use absolute path
+
+Will be given option to save a csv file of your qualifying loans if the number of qualifying loans is > 0
+
+If program is fed a valid path for the output file, will be able to view the new csv of qualifying loans accordingly
+
 
 ---
 
