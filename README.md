@@ -15,6 +15,12 @@ Describe the technologies required to use your project such as programming langu
 ## Installation Guide
 
 In this section, you should include detailed installation notes containing code blocks and screenshots.
+Required installations:
+
+Fire 0.4.0
+Questionary 1.9..0
+PyTest 6.2.4
+Python 3.7.10
 
 ---
 
