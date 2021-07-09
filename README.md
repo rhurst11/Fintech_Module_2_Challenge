@@ -12,12 +12,12 @@ This programs uses the following:
 Python
 
 ### Imported Libraries:
-csv
-sys
-questionary
-fire 
-pytest
-Path from pathlib
+* csv
+* sys
+* questionary
+* fire 
+* pytest
+* Path from pathlib
 
 ### Versions Used In Program:
 Fire 0.4.0
