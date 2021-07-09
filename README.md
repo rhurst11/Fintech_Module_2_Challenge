@@ -9,7 +9,7 @@ This application allows a user to input CSV data of different loans along with s
 This programs uses the following:
 
 ### Language: 
-Python
+* Python
 
 ### Imported Libraries:
 * csv
@@ -32,10 +32,10 @@ You will need to install the following software versions within your terminal in
 
 ### Installation Steps In Order: 
 
-conda activate dev
-pip install fire
-pip install questionary
-pip install pytest
+* conda activate dev
+* pip install fire
+* pip install questionary
+* pip install pytest
 
 
 
