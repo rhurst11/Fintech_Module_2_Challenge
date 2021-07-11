@@ -49,6 +49,10 @@ Will be given option to save a csv file of your qualifying loans if the number o
 
 If program is fed a valid path for the output file, will be able to view the new csv of qualifying loans accordingly
 
+Here is an example walkthrough with the CLI:
+
+![alt text](https://github.com/rhurst11/Fintech_Module_2_Challenge/blob/main/screenshots/Screen%20Shot%202021-07-11%20at%201.16.27%20PM.png)
+
 
 ---
 
